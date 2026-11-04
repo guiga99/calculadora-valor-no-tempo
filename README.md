@@ -19,6 +19,12 @@ npm test
 
 ## Hospedagem
 
+Para colocar a calculadora online sem instalar nada no computador, use o botão abaixo, entre no Render com sua conta GitHub e confirme a criação do serviço gratuito:
+
+[![Publicar no Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/guiga99/calculadora-valor-no-tempo)
+
+Quando o serviço ficar **Live**, abra a URL `https://…onrender.com` exibida pelo Render. Esse será o endereço da sua calculadora. O plano gratuito pausa após inatividade e pode levar cerca de um minuto para abrir novamente. Os dados oficiais continuam sendo buscados automaticamente quando você usa a ferramenta.
+
 É necessário um servidor Node; GitHub Pages sozinho não executa o backend. Configure comando de inicialização `npm start`, Node 24 e uma pasta persistente de cache. `PORT` configura a porta; `CACHE_DIR` configura a pasta (padrão `.cache`). O processo precisa de permissão para gravar nela.
 
 Há um blueprint `render.yaml` para hospedar como serviço Docker no Render. No plano gratuito, o cache em disco é temporário e será refeito após reinicializações; use um disco persistente em um plano compatível se precisar preservar o cache entre implantações. A publicação depende de conectar sua conta do provedor ao repositório.
