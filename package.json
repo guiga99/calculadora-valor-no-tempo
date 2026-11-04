@@ -1,0 +1,8 @@
+{
+  "name": "calculadora-valor-no-tempo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": { "start": "node --use-env-proxy server.js", "test": "node test/calculator.test.js", "check": "node --check server.js && node --check lib/data.js && node --check lib/calculator.js && node --check public/app.js" }
+}

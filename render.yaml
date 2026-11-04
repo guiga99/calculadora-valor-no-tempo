@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: calculadora-valor-no-tempo
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: '3000'
